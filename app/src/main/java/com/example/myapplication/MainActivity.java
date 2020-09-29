@@ -11,4 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void setTheme(@StyleRes final int resId) {
+        super.setTheme(resId);
+        getDelegate().setTheme(resId);
+    }
 }
